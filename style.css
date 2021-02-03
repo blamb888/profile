@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  background: rgba(243 243 243);
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: inherit;
+}
+
+.card_white {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 24px auto;
+  padding: 16px;
+  background-color: rgba(247 247 247);
+  box-shadow: 1px 1px 2px rgb(232, 238, 234);
+  text-align: center;
+  border-radius: 4px;
+}
+
+/*Links & Buttons */
+
+a {
+  text-decoration: none;
+  color: rgb(129, 178, 154);
+}
+a:hover {
+  color: rgb(224, 122, 95);
+  transition: .3s;
+}
+
+#btn_olive {
+  background: rgba(129, 178, 154, 0.315);
+  border-color: rgba(129, 178, 154, 0.52);
+  padding: 16px;
+  margin: 16px;
+  border-radius: 4px;
+}
+
+#btn_olive:hover {
+  background: rgba(129, 178, 154, 0.144);
+  border-color: rgba(129, 178, 154, 0.171);
+  transition: .6s;
+}
+
+/*Lists*/
+
+ul {
+  display: block;
+}
+
+li {
+  display: inline-block;
+  margin: 24px;
+  color: rgb(129, 178, 154);
+}
+
+li:hover {
+  color: rgb(224, 122, 95);
+  transition: .3s;
+}
+
+i {
+  font-size: 32px;
+}
+
+/*Images*/
+.card_image {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgb(4, 4, 4);
+  text-align: left;
+}
+
+#profile_image {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgb(4, 4, 4);
+  margin: 0 auto;
+}
+
+#doge {
+  margin: 0px 5px 15px 0px;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgb(4, 4, 4);
+}
+
+#dnd_logo {
+  margin: 0 auto;
+  width: 128px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(2, 2, 2, 0.308);
+  align-content: inherit;
+}
+
+#video {
+  margin: 0 auto;
+}
+
+/*Responsive Design Stuff*/
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .card_white {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .card_white {
+    width: 500px;
+  }
+  i {
+    font-size: 22px;
+  }
+  #title_card > h2 {
+    font-size: 18px;
+  }
+  #btn_olive {
+    padding: 12px;
+    margin: 12px;
+    border-radius: 2px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .card_white {
+    width: 300px;
+  }
+  i {
+    font-size: 24px;
+  }
+  #title_card > h2 {
+    font-size: 12px;
+  }
+  #btn_olive {
+    padding: 8px;
+    margin: 8px;
+    border-radius: 2px;
+  }
+}
